@@ -21,6 +21,14 @@
       $(".sticky-header").addClass("sticky");
     }
   });
+  $(window).on("click", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 100) {
+      $(".sticky-header").removeClass("sticky");
+    } else {
+      $(".sticky-header").addClass("sticky");
+    }
+  });
 
   // background image
   function dataBackgroundImage() {
@@ -200,7 +208,10 @@
   $(".modal").on("shown.bs.modal", function (e) {
     $(".product_navactive").resize();
   });
-
+  
+  $(".modal").on("click", function (e) {
+    $(".product_navactive").resize();
+  });
   $(".product_navactive a").on("click", function (e) {
     e.preventDefault();
     var $href = $(this).attr("href");
