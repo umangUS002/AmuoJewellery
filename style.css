@@ -12,6 +12,9 @@
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
 }
+.container1{
+  display: block;
+}
 * {
   box-sizing: border-box;
 }
@@ -727,7 +730,7 @@ ul {
 }
 
 .sticky-header.sticky {
-  position: fixed;
+  position:fixed;
   z-index: 99;
   width: 100%;
   top: 0;
@@ -944,8 +947,8 @@ ul {
   color: #a8741a;
 }
 .ion-chevron-down {
-  font-size: 14px;
-  padding-left: 3px;
+  font-size: 10px;
+  padding-left: 0px;
 }
 
 .main_menu nav > ul > li > a {
@@ -1285,7 +1288,7 @@ ul {
   border: 2px solid #a8741a;
 }
 .product_tab_button {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -1299,6 +1302,7 @@ ul {
   display: inline-block;
   position: relative;
   border: 2px solid #2d2d2d;
+  
 }
 
 .product_tab_button ul.nav::before {
@@ -1321,11 +1325,23 @@ ul {
 }
 
 .product_tab_button ul li {
-  display: inline-block;
+  display: flex;
 }
 
 .product_tab_button ul li:first-child a {
   border-left: 0;
+}
+.top{
+  display: flex;
+  justify-content: space-around;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  height: 200px;
+
 }
 
 .product_tab_button ul li a {
@@ -1383,19 +1399,36 @@ ul {
   flex: 0 0 100%;
   max-width: 100%;
   padding: 0 6px;
+  @media (max-width: 1530px) {
+    display: inline-block;
+}
 }
 .custom-row {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
-  margin-left: -6px;
-  margin-right: -6px;
+  
+  
 }
+
 
 .single_product {
   transition: 0.3s;
   margin-bottom: 30px;
+  width: 200px;
+  display: inline-block;
+  margin: 60px ;
+  margin-bottom: 0px;
+  @media (max-width: 1130px) {
+    margin: 10px;
 }
-
+}
+.title{
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 .single_product:hover {
   background: #fff;
   border-radius: 3px;
@@ -1458,6 +1491,7 @@ ul {
   width: 100%;
   text-align: center;
   display: block;
+  
 }
 
 .quick_button a:hover {
@@ -2512,4 +2546,27 @@ p {
 .arrow-right:hover {
   background: #a8741a;
   color: #fff;
+}
+.h{
+  display: flex;
+  text-align: center;
+  margin: 0px;
+  
+}
+
+.f{
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1530px) {
+    display: block;
+}
+}
+
+.single_product
+.img-size{
+  height: 200px;
+  width: 200px;
 }
