@@ -11,6 +11,13 @@
   $(".mini_cart_close > a").on("click", function () {
     $(".mini_cart").removeClass("active");
   });
+  $(".cart_link > a").on("hover", function () {
+    $(".mini_cart").addClass("active");
+  });
+
+  $(".mini_cart_close > a").on("hover", function () {
+    $(".mini_cart").removeClass("active");
+  });
 
   //sticky navbar
   $(window).on("scroll", function () {
