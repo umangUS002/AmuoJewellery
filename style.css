@@ -51,8 +51,11 @@ h6 {
   font-weight: 400;
   margin-top: 0;
   font-family: "Baloo 2", cursive;
+  color: white;
 }
-
+.action_links{
+  color: white;
+}
 h1 {
   font-size: 48px;
   line-height: 1;
