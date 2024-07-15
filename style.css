@@ -99,7 +99,11 @@ h6 {
   font-size: 12px;
   line-height: 14px;
 }
-
+.id1{
+  margin: 0;
+  color: #5f27cd;
+  font-size: 12px;
+}
 p:last-child {
   margin-bottom: 0;
 }
@@ -122,7 +126,51 @@ input,
 span {
   transition: all 0.3s ease 0s;
 }
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
 
+.btn-41 {
+  border: 2px solid black;
+  z-index: 1;
+  color: black;
+  margin-top: 30px;
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #5f27cd;
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
 *:focus {
   outline: none !important;
 }
@@ -146,10 +194,10 @@ a:focus {
   width: 90%;
   @media (max-width: 1530px) {
     margin-left: -20px;
-    width: 300px;
-    height: 150px;
-    margin-top: -150px;
-    margin-bottom: -150px;
+    width:auto;
+    height: 170px;
+    margin-top: -170px;
+    margin-bottom: -170px;
     
 }
 }
@@ -814,7 +862,7 @@ ul {
   width: 100%;
   height: 70px;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background:rgba(255, 255, 255, 0.9);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
   animation-name: fadeInDown;
   animation-duration: 900ms;
@@ -838,7 +886,7 @@ ul {
 }
 
 .header_black .sticky-header.sticky {
-  background: rgba(54, 63, 77, 0.9);
+  background:#5f27cd;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
 }
 
@@ -1517,7 +1565,9 @@ ul {
   
 }
 
-
+.container{
+  width: 100%;
+}
 .single_product {
   transition: 0.1s;
   margin-bottom: 30px;
@@ -1526,8 +1576,9 @@ ul {
   margin: 30px ;
   margin-bottom: 0px;
   @media (max-width: 1130px) {
-    margin: 8px;
+    margin: 10px;
     width: 150px;
+    
 }
 }
 .title{
@@ -2547,7 +2598,15 @@ p {
     height: 200px;
 }
 }
-
+.modal_right{
+  margin-top: 30px;
+  margin-left: 50px;
+  
+  @media (max-width: 1530px) {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+}
 .modal_tab_button ul li a img {
   width: 100%;
   @media (max-width: 130px) {
@@ -2556,8 +2615,9 @@ p {
 }
 }
 
+
 .modal_title h2 {
-  font-size: 24px;
+  font-size: 30px;
   text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 1px;
