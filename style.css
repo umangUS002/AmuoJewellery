@@ -1573,11 +1573,12 @@ ul {
   margin-bottom: 30px;
   width: 250px;
   display: inline-block;
-  margin: 30px ;
+  margin: 30px;
   margin-bottom: 0px;
   @media (max-width: 1130px) {
     margin: 10px;
-    width: 150px;
+
+    width: 130px;
     
 }
 }
