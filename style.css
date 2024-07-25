@@ -943,6 +943,12 @@ ul {
   z-index: 9;
   top: 100%;
   text-align: left;
+  @media (max-width: 1300px) {
+    
+    min-width: 110px;
+    padding: 8px 8px;
+
+}
 }
 
 .main_menu nav > ul > li ul.sub_menu > li > a {
@@ -1594,6 +1600,17 @@ ul {
   border-radius: 3px;
   box-shadow: 0px 0px 7px 0px silver;
 }
+.two:hover{
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px 0px red;
+}
+.two:active{
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px 0px red;
+}
+
 .single_product:active{
   background: #fff;
   border-radius: 3px;
@@ -1679,6 +1696,10 @@ ul {
 }
 .quick_button a:hover{
   background: #a8741a;
+}
+
+.one{
+  color: red;
 }
 
 
@@ -2865,4 +2886,6 @@ p {
     min-width: 70px;;
 }
 }
+
+
 
