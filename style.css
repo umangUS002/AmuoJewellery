@@ -1588,6 +1588,33 @@ ul {
     
 }
 }
+.single_product1 {
+  transition: 0.1s;
+  margin-bottom: 30px;
+  width: 250px;
+  display: inline-block;
+  margin: 30px;
+  margin-bottom: 0px;
+  @media (max-width: 1130px) {
+    margin: 10px;
+
+    
+}
+}
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}
+
+.img-ticker {
+  animation: ticker-kf 18s linear infinite;
+}
+
 .title{
   color: whitesmoke;
   display: flex;
